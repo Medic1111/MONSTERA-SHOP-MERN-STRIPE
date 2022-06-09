@@ -1,0 +1,33 @@
+.li {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0.5em;
+}
+
+.name {
+  color: rgb(21, 55, 38);
+  font-size: 2em;
+  letter-spacing: 1.2px;
+}
+.price {
+  color: rgb(21, 55, 38);
+  font-size: 2em;
+  letter-spacing: 1.2px;
+}
+.quantity {
+  margin-left: 1em;
+}
+
+.removeBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  color: rgb(178, 140, 42);
+  font-weight: 600;
+  margin-left: 0.5em;
+  cursor: pointer;
+}

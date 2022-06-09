@@ -1,0 +1,53 @@
+.div {
+  background-color: #f7f7f7;
+  height: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.h1 {
+  font-size: 4em;
+  letter-spacing: 2px;
+  color: rgb(52, 159, 109);
+  display: flex;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.total {
+  color: rgb(52, 159, 109);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+  font-size: 1.7em;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 1.7em;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: solid rgb(178, 140, 42) 2px;
+  background-color: transparent;
+  color: rgb(178, 140, 42);
+  cursor: pointer;
+  height: 5vh;
+  margin-bottom: 1vh;
+  width: 90%;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: rgba(178, 139, 42, 0.223);
+  cursor: pointer;
+  transition: 0.2s;
+}

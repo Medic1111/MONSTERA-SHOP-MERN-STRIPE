@@ -1,0 +1,8 @@
+.ul {
+  height: 60%;
+  width: 90%;
+  padding: 5vh 0;
+  list-style: none;
+  overflow-y: scroll;
+  border-radius: 5px;
+}

@@ -1,0 +1,67 @@
+.li {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+  padding: 0 5vw;
+}
+.plantPic {
+  width: 40%;
+  border-radius: 0 5px 5px 0;
+}
+.txtBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  flex-direction: column;
+  width: 50%;
+  border-right: solid rgb(42, 153, 99);
+  height: 85%;
+}
+.h2 {
+  font-size: 6em;
+  text-align: center;
+  color: rgb(29, 103, 67);
+}
+
+.description {
+  font-size: 2.3em;
+  max-width: 80%;
+  letter-spacing: 1.8px;
+  line-height: 1.2;
+  color: rgb(21, 55, 38);
+  text-align: center;
+}
+
+.price {
+  font-size: 4em;
+  color: rgb(29, 103, 67);
+}
+
+@media (max-width: 798px) {
+  .li {
+    flex-direction: column;
+    gap: 5vh;
+    height: auto;
+    padding: 0;
+    width: 90%;
+  }
+  .plantPic {
+    width: 95%;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+  }
+  .txtBox {
+    width: 95%;
+    border: transparent;
+  }
+  .h2 {
+    font-size: 5em;
+  }
+  .description {
+    width: 90%;
+  }
+}
