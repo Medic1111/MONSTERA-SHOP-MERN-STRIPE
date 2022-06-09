@@ -10,6 +10,8 @@ import { cartActions } from "../../features/cartSlice";
 import React, { useState } from "react";
 
 const CheckOutForm = () => {
+  const [formComplete, setFormComplete] = useState(true);
+
   const [billingInfo, setBillingInfo] = useState({
     name: "",
     address: "",
@@ -53,35 +55,50 @@ const CheckOutForm = () => {
   const payHandler = async (event) => {
     event.preventDefault();
 
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: "card",
-      card: elements.getElement(CardElement),
-    });
+    if (
+      billingInfo.name.length > 0 &&
+      billingInfo.address.length > 0 &&
+      billingInfo.city.length > 0 &&
+      billingInfo.state.length > 0 &&
+      shippingInfo.address.length > 0 &&
+      shippingInfo.city.length > 0 &&
+      shippingInfo.state.length > 0 &&
+      shippingInfo.zip.length > 0
+    ) {
+      setFormComplete(true);
 
-    if (!error) {
-      axios
-        .post("/stripe/charge", {
-          id: paymentMethod.id,
-          amount: Number(`${totalInCart}00`),
-          billingInfo,
-          shippingInfo,
-        })
-        .then((serverRes) => {
-          dispatch(checkOutActions.toggle());
-          dispatch(modalActions.toggleModal());
-          dispatch(failSuccessActions.setHasFailed(false));
-          dispatch(failSuccessActions.setIsModal());
-          dispatch(cartActions.clearCart());
-        })
-        .catch((err) => {
-          console.log(err.response.status);
-          if (err.response.status === 400) {
-            dispatch(failSuccessActions.setHasFailed(true));
+      const { error, paymentMethod } = await stripe.createPaymentMethod({
+        type: "card",
+        card: elements.getElement(CardElement),
+      });
+
+      if (!error) {
+        axios
+          .post("/stripe/charge", {
+            id: paymentMethod.id,
+            amount: Number(`${totalInCart}00`),
+            billingInfo,
+            shippingInfo,
+          })
+          .then((serverRes) => {
+            dispatch(checkOutActions.toggle());
+            dispatch(modalActions.toggleModal());
+            dispatch(failSuccessActions.setHasFailed(false));
             dispatch(failSuccessActions.setIsModal());
-          }
-        });
+            dispatch(cartActions.clearCart());
+          })
+          .catch((err) => {
+            console.log(err.response.status);
+            if (err.response.status === 400) {
+              dispatch(failSuccessActions.setHasFailed(true));
+              dispatch(failSuccessActions.setIsModal());
+            }
+          });
+      } else {
+        console.log(error.message);
+      }
     } else {
-      console.log(error.message);
+      setFormComplete(false);
     }
   };
 
@@ -90,6 +107,9 @@ const CheckOutForm = () => {
       <p className={classes.pTotal}>
         Total: $<span>{totalInCart}</span>
       </p>
+      {formComplete || (
+        <p className={classes.pTotal}>Please, completed all fields!</p>
+      )}
       <div className={classes.cardNumber}>
         <CardElement />
       </div>
