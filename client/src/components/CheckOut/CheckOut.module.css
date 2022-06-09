@@ -15,7 +15,7 @@
   letter-spacing: 1.7px;
   color: #2a9963;
   text-align: center;
-  max-width: 70%;
+  max-width: 40%;
 }
 
 .btn {
@@ -44,10 +44,33 @@
   margin: -5em 0;
   margin-right: 10em;
 }
+.img {
+  width: 15%;
+  transform: rotate(120deg);
+  margin: -5em 0;
+  margin-right: 10em;
+}
 
 @media (max-width: 798px) {
+  .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f7f7f7;
+  }
   .img {
+    width: 30%;
+
     margin: -2.5em 0;
     margin-right: 10em;
+  }
+  .h2 {
+    max-width: 70%;
   }
 }
