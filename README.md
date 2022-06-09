@@ -6,9 +6,7 @@
 
 [FRONT_END]: REACT, REDUX
 
-[BACKEND]: NodeJs, Express
-
-[payment]: STRIPE
+[BACKEND]: NodeJs, Express, Stripe
 
 # STEPS:
 
