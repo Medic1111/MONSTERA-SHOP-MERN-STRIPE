@@ -62,8 +62,7 @@
     width: 100%;
     padding: 5vh 5vw;
     background: none;
-    /* overflow-y: scroll; */
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
   .cardNumber {
     width: 100%;
