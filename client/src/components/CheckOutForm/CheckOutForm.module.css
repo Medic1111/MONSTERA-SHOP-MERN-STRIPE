@@ -65,6 +65,9 @@
     position: fixed;
     top: 0;
     left: 0;
+    /* TEST */
+    height: 100vh;
+    overflow-y: hidden;
     /* justify-content: flex-start; */
   }
   .cardNumber {

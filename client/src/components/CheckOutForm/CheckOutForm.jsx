@@ -70,7 +70,7 @@ const CheckOutForm = () => {
         axios
           .post("/stripe/charge", {
             id: paymentMethod.id,
-            amount: Number(`${totalInCart}00`),
+            // amount: Number(`${totalInCart}00`),
             billingInfo,
             shippingInfo,
           })
@@ -121,7 +121,7 @@ const CheckOutForm = () => {
         placeholder="Shipping address"
         name="address"
         value={shippingInfo.address}
-        onChange={onBillingChange}
+        onChange={onShippingChange}
       />
       <input
         className={classes.cardNumber}
