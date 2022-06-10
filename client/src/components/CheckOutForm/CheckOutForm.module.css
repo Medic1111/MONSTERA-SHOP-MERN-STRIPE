@@ -58,8 +58,9 @@
 
 @media (max-width: 798px) {
   .form {
-    height: 85%;
-    width: 85%;
+    height: 100%;
+    width: 100%;
+    padding: 5vh 5vw;
     background: none;
     overflow-y: scroll;
     justify-content: flex-start;
