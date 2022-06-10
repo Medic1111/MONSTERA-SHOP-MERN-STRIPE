@@ -70,7 +70,7 @@ const CheckOutForm = () => {
         axios
           .post("/stripe/charge", {
             id: paymentMethod.id,
-            // amount: Number(`${totalInCart}00`),
+            amount: Number(`${totalInCart}00`),
             billingInfo,
             shippingInfo,
           })
