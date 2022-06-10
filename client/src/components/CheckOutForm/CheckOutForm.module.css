@@ -62,6 +62,9 @@
     width: 100%;
     padding: 5vh 5vw;
     background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     /* justify-content: flex-start; */
   }
   .cardNumber {
