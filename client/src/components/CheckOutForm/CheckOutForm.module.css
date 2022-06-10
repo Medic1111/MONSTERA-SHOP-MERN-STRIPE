@@ -9,6 +9,7 @@
   background: url("../../assets//transparent.png");
   background-repeat: no-repeat;
   background-size: contain;
+  overflow-x: hidden;
 }
 .btn {
   width: 100%;
@@ -60,6 +61,8 @@
     height: 85%;
     width: 85%;
     background: none;
+    overflow-y: scroll;
+    justify-content: flex-start;
   }
   .cardNumber {
     width: 100%;
