@@ -14,9 +14,6 @@ const CheckOutForm = () => {
 
   const [billingInfo, setBillingInfo] = useState({
     name: "",
-    address: "",
-    city: "",
-    state: "",
   });
 
   const onBillingChange = (event) => {
@@ -57,9 +54,6 @@ const CheckOutForm = () => {
 
     if (
       billingInfo.name.length > 0 &&
-      billingInfo.address.length > 0 &&
-      billingInfo.city.length > 0 &&
-      billingInfo.state.length > 0 &&
       shippingInfo.address.length > 0 &&
       shippingInfo.city.length > 0 &&
       shippingInfo.state.length > 0 &&
@@ -116,35 +110,9 @@ const CheckOutForm = () => {
       <input
         className={classes.cardNumber}
         type="text"
-        placeholder="Name on card"
+        placeholder="Name"
         name="name"
         value={billingInfo.name}
-        onChange={onBillingChange}
-      />
-      <input
-        className={classes.cardNumber}
-        type="text"
-        placeholder="Billing address"
-        name="address"
-        value={billingInfo.address}
-        onChange={onBillingChange}
-      />
-
-      <input
-        className={classes.cardNumber}
-        type="text"
-        placeholder="City"
-        name="city"
-        value={billingInfo.city}
-        onChange={onBillingChange}
-      />
-
-      <input
-        className={classes.cardNumber}
-        type="text"
-        placeholder="State"
-        name="state"
-        value={billingInfo.state}
         onChange={onBillingChange}
       />
       <input
@@ -153,7 +121,7 @@ const CheckOutForm = () => {
         placeholder="Shipping address"
         name="address"
         value={shippingInfo.address}
-        onChange={onShippingChange}
+        onChange={onBillingChange}
       />
       <input
         className={classes.cardNumber}
@@ -163,6 +131,7 @@ const CheckOutForm = () => {
         value={shippingInfo.city}
         onChange={onShippingChange}
       />
+
       <input
         className={classes.cardNumber}
         type="text"
