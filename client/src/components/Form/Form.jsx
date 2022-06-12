@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { modalActions } from "../../features/modalSlice";
 import { cartActions } from "../../features/cartSlice";
 
-const Form = ({ id, name, price }) => {
+const Form = ({ id, name, price, src }) => {
   const dispatch = useDispatch();
   const [userInput, setUserInput] = useState(1);
 
@@ -14,7 +14,13 @@ const Form = ({ id, name, price }) => {
     dispatch(cartActions.addToItems(Number(userInput)));
     dispatch(cartActions.addToCost(price * Number(userInput)));
     dispatch(
-      cartActions.pushToArr({ id, name, price, quantity: Number(userInput) })
+      cartActions.pushToArr({
+        id,
+        name,
+        price,
+        quantity: Number(userInput),
+        src,
+      })
     );
     setUserInput(1);
   };

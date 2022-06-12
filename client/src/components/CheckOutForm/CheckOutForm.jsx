@@ -76,7 +76,6 @@ const CheckOutForm = () => {
           })
           .then((serverRes) => {
             dispatch(checkOutActions.toggle());
-            // dispatch(modalActions.toggleModal());
             dispatch(failSuccessActions.setHasFailed(false));
             dispatch(failSuccessActions.setIsModal());
             dispatch(cartActions.clearCart());

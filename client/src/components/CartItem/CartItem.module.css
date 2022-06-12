@@ -1,5 +1,6 @@
 .li {
   width: 100%;
+  max-width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -30,4 +31,30 @@
   font-weight: 600;
   margin-left: 0.5em;
   cursor: pointer;
+}
+.img {
+  height: 80%;
+  border-radius: 2px;
+  width: 4vw;
+}
+
+.div {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  width: 50%;
+}
+
+@media (max-width: 798px) {
+  .img {
+    width: 12vw;
+  }
+  .name {
+    max-width: 30%;
+  }
+  .div {
+    max-width: 50%;
+  }
 }

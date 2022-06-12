@@ -15,6 +15,8 @@ const CartList = () => {
             name={obj.name}
             price={obj.price}
             quantity={obj.quantity}
+            // test
+            src={obj.src}
           />
         );
       })}

@@ -15,7 +15,6 @@ const Cart = () => {
 
   const openCheckOutHandler = () => {
     dispatch(checkOutActions.toggle());
-    // TEST
     dispatch(modalActions.toggleModal());
   };
 

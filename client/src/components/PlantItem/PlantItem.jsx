@@ -9,7 +9,7 @@ const PlantItem = ({ id, src, name, description, price }) => {
         <h2 className={classes.h2}>{name}</h2>
         <p className={classes.description}>{description}</p>
         <p className={classes.price}>${price}</p>
-        <Form id={id} name={name} price={price} />
+        <Form id={id} name={name} price={price} src={src} />
       </div>
     </li>
   );
