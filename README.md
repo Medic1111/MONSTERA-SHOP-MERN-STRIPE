@@ -1,18 +1,26 @@
 # MONSTERA-SHOP
 
-- Minimalist online shopping for monstera plants
+Minimalist online shopping for monstera plants
 
 ## TECH:
 
-[FRONT_END]: REACT, REDUX
+1. FRONT-END:
 
-[BACKEND]: NodeJs, Express, Stripe
+- React
+
+2. BACK-END:
+
+- NodeJs
+- Express
+- Stripe
 
 ## STEPS:
 
-[1]: Download the doc and run `npm install` to install all the dependencies
-[2]: Use `node server/index.js` to run the server/ alternatively use nodemon
-[3]: On a different terminal, `cd client` and run `npm start`
+1. Download the doc and run `npm install` to install all the dependencies
+
+2. Use `node server/index.js` to run the server/ alternatively use nodemon
+
+3. On a different terminal, `cd client` and run `npm start`
 
 ## TEST CREDENTIALS:
 
