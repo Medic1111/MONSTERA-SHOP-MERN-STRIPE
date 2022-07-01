@@ -2,7 +2,7 @@
 
 Minimalist online shopping for monstera plants
 
-[LIVE-VERSION](monstera-shop.herokuapp.com/)
+[LIVE-VERSION](https://monstera-shop.herokuapp.com/)
 
 ## TECH:
 
