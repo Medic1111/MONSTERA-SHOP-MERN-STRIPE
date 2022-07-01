@@ -24,14 +24,14 @@ Minimalist online shopping for monstera plants
 
 ## TEST CREDENTIALS:
 
-[CARD_NUMBER]: 4242 4242 4242 4242
-[EXP_DATE]: 0424
-[CVC]:242
-[ZIP]: 42424
+- CARD NUMBER: 4242 4242 4242 4242
+- EXP-DATE: 0424
+- CVC:242
+- ZIP: 42424
 
 ## THE IDEA
 
-[Minimal_Me]
+###### Minimal Me
 
 - As a minimalist, I can trully appreciate simple and straight-forwardness in just about any utility
 
@@ -39,7 +39,7 @@ Minimalist online shopping for monstera plants
 
 - What to 'pretend' to sell that would truly inspire me?
 
-[My_Rescue_Monstera]
+###### My Rescue Monstera
 
 - The week prior to engaging in this project, I had the pleasure to rescue a suffering monstera and provide it with love and care it much needed
 
@@ -47,7 +47,7 @@ Minimalist online shopping for monstera plants
 
 - I would be able to unite a inspiring target, with the minimalist simple approach, to come up with my e-commerce
 
-[The_Goal]
+###### The Goal
 
 - The goal was to list the 3 types of monstera plants available widely in the market on a root page
 
@@ -65,7 +65,7 @@ Minimalist online shopping for monstera plants
 
 - If successful, the user will find themselves back at the root page, else, the user will find themselves back at the payment form modal
 
-[Details]
+## Details
 
 - An option to select quantity is not available at the item list displayed at the root page
 
@@ -73,18 +73,18 @@ Minimalist online shopping for monstera plants
 
 [POSSIBLE_IMPROVEMENT_IDEAS]
 
-- The idea is to optimize the use of ReactDOM portal to its max extent
+- [ ] The idea is to optimize the use of ReactDOM portal to its max extent
 
-- Redux can be reconfig to also provide a leaner store
+- [ ] Redux can be reconfig to also provide a leaner store
 
-- At this point, the data being used is so minimal it's okay to be hard-coded, but perhaps just to maximize complexity a bit I would fetch it from DATABASE
+- [ ] At this point, the data being used is so minimal it's okay to be hard-coded, but perhaps just to maximize complexity a bit I would fetch it from DATABASE
 
-- In the future, buttons will be a single component to be utilized dynamically
+- [ ] In the future, buttons will be a single component to be utilized dynamically
 
 [UNHAPPY_ABOUT]
 
-- The mobile design lacks polish
-- There's no tablet specific design
-- Those are priorities on the list of upcoming adjustments
+- [ ] The mobile design lacks polish
+- [ ] There's no tablet specific design
+- [ ] Those are priorities on the list of upcoming adjustments
 
-[ARYSE_TANSY]: Self-taught full-stack web developer on a life-long journey of learning and applying new skills.
+> ARYSE TANSY: Self-taught full-stack web developer on a life-long journey of learning and applying new skills.
