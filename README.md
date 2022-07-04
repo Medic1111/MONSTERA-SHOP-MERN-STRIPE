@@ -4,6 +4,8 @@ Minimalist online shopping for monstera plants
 
 [LIVE-VERSION](https://monstera-shop.herokuapp.com/)
 
+![Monstera-shop home page screenshot](./client/public/home.png)
+
 ## TECH:
 
 1. FRONT-END:
@@ -30,6 +32,20 @@ Minimalist online shopping for monstera plants
 - EXP-DATE: 0424
 - CVC:242
 - ZIP: 42424
+
+1. Select an Item and add to cart
+2. Open cart
+
+![Image of a cart with an item in it](./client/public/cart.png)
+
+3. Click on `Check out`
+4. Enter the test info: 42 pattern
+
+![Image of checkout page](./client/public/check.png)
+
+5. Receive confirmation message
+
+![Image of payment confirmation](./client/public/confirm.png)
 
 ## THE IDEA
 
