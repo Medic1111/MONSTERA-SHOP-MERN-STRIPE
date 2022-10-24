@@ -1,6 +1,7 @@
 # MONSTERA-SHOP
 
 Minimalist online shopping for monstera plants
+> [TypeScript simplified Client-only version here](https://github.com/Medic1111/MONSTERA-SHOP-CLIENT-ONLY-TYPESCRIPT)
 
 [LIVE-VERSION](https://monstera-shop.herokuapp.com/)
 
